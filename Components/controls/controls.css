@@ -1,0 +1,95 @@
+.controlls {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+.controlls:hover:focus {
+  background-color: var(--color-secondary) !important;
+  transition: all 0.4s ease-in-out;
+}
+.controlls:hover:focus i {
+  color: var(--color-white) !important;
+}
+.controlls .active-btn {
+  background-color: var(--color-secondary) !important;
+  transition: all 0.4s ease-in-out;
+}
+.controlls .active-btn i {
+  color: var(--color-white) !important;
+}
+.controlls .control {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: var(--color-grey-4);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.7rem 0;
+  box-shadow: var(--box-shadow-1);
+}
+.controlls .control i {
+  font-size: 1.2rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
+}
+
+.tooltiptext {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  opacity: 0;
+  width: 120px;
+  background-color: var(--color-secondary);
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1001;
+  margin-left: -140px;
+  margin-bottom: 0;
+}
+
+.tooltip .tooltiptext.fade {
+  transform: translate3d(0.5em, 50%);
+  transition: all 0.15s ease-in-out;
+}
+
+.tooltip:hover .tooltiptext.fade {
+  opacity: 1;
+  transform: translate3d(-1em, 0, 0);
+}
+
+.theme-btn {
+  top: 5%;
+  right: 3%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--color-grey-4);
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+}
+.theme-btn:active {
+  transform: translateY(-3px);
+}
+.theme-btn i {
+  font-size: 1.4rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
+}/*# sourceMappingURL=controls.css.map */
