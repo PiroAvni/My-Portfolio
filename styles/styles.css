@@ -1,6 +1,6 @@
-@import url("/layout/Background/bk.css");
+@import url(/layout/Background/bk.css);
 @import url(/Components/controls/controls.css);
-@import url("/layout/root/root.css");
+@import url(/layout/root/root.css);
 @import url(/Components/CTA_BTN/CTA.css);
 @import url(/Components/Slider/project_style.css);
 @import url(/Components/Image-Slider/image-slider.css);
