@@ -81,16 +81,7 @@ section {
 
 .active {
   display: block;
-  -webkit-animation: scaleAnim 1s ease-in-out;
-          animation: scaleAnim 1s ease-in-out;
-}
-@-webkit-keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
+  animation: scaleAnim 1s ease-in-out;
 }
 @keyframes scaleAnim {
   0% {
@@ -123,8 +114,7 @@ section {
   left: 0;
   top: 0;
   z-index: 1;
-  -webkit-clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
-          clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+  clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
@@ -138,8 +128,7 @@ section {
 .header-content .left-header .image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: all 0.4s ease-in-out;
   filter: grayscale(100%);
 }
@@ -541,17 +530,21 @@ section {
   header {
     padding: 0 !important;
   }
+
   .theme-btn {
     width: 50px;
     height: 50px;
   }
+
   .header-content {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
+
   .left-header .h-shape {
     display: none;
   }
+
   .right-header {
     grid-row: 1;
     padding-right: 0rem !important;
@@ -563,10 +556,12 @@ section {
     text-align: center;
     padding-top: 3rem;
   }
+
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;
   }
+
   .controlls {
     top: auto;
     bottom: 0;
@@ -580,19 +575,23 @@ section {
   .controlls .control {
     margin: 1rem 0.3rem;
   }
+
   .tooltip .tooltiptext {
     font-size: 0.8em;
     margin-left: 0;
     margin-bottom: 95px;
   }
+
   .tooltip .tooltiptext.fade {
     transform: translate3d(0.5em, 50%);
     transition: all 0.15s ease-in-out;
   }
+
   .tooltip:hover .tooltiptext.fade {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+
   .about-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -606,28 +605,35 @@ section {
   .about-container .left-about p {
     padding-left: 0;
   }
+
   .timeline {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
+
   .section {
     padding: 2rem 2.5rem !important;
   }
+
   .section .about {
     padding: 3rem 1.5rem !important;
   }
+
   .about-stats .progress-bars {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
     margin-top: 1rem;
   }
+
   .blogs {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
+
   .contact-content-con {
     flex-direction: column;
   }
@@ -635,16 +641,20 @@ section {
     margin-left: 0;
     margin-top: 2.5rem;
   }
+
   .contact-content-con .right-contact .i-c-2 {
     flex-direction: column;
   }
+
   .contact-content-con .right-contact .i-c-2 :last-child {
     margin-left: 0;
     margin-top: 1.5rem;
   }
+
   .contact-content-con .right-contact {
     margin-bottom: 6rem;
   }
+
   .contact-item {
     flex-direction: column;
     margin: 1rem 0;
@@ -659,6 +669,7 @@ section {
   .contact-item .icon {
     grid-template-columns: 25px 1fr;
   }
+
   .main-title h2 {
     font-size: 2rem;
   }
@@ -668,12 +679,14 @@ section {
   .main-title h2 .bg-text {
     font-size: 2.3rem;
   }
+
   .contact-info .contact-item {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
+
   .btn-contacts {
     display: flex;
     flex-direction: column;
@@ -684,6 +697,7 @@ section {
   .section {
     padding: 7rem 11rem;
   }
+
   .contact-content-con {
     flex-direction: column;
   }
@@ -691,16 +705,20 @@ section {
     margin-left: 0;
     margin-top: 2.5rem;
   }
+
   .contact-content-con .right-contact .i-c-2 {
     flex-direction: column;
   }
+
   .contact-content-con .right-contact .i-c-2 :last-child {
     margin-left: 0;
     margin-top: 1.5rem;
   }
+
   .contact-content-con .right-contact {
     margin-bottom: 6rem;
   }
+
   .main-title h2 .bg-text {
     font-size: 5.5rem;
   }
@@ -710,9 +728,11 @@ section {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 6rem;
   }
+
   .portfolios {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .header-content .right-header {
     padding-right: 9rem;
   }
@@ -721,6 +741,7 @@ section {
   .blogs {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -732,6 +753,7 @@ section {
   .about-container .right-about {
     padding-top: 2.5rem;
   }
+
   .main-title h2 {
     font-size: 4rem;
   }
@@ -746,13 +768,16 @@ section {
   .section {
     padding: 7rem 6rem;
   }
+
   .about-container .left-about {
     padding-right: 0rem;
   }
+
   .header-content {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
+
   .left-header .h-shape {
     display: none;
   }
@@ -760,6 +785,7 @@ section {
     width: 90% !important;
     margin: 0 auto !important;
   }
+
   .right-header {
     grid-row: 1;
     padding-right: 0rem !important;
@@ -776,15 +802,19 @@ section {
   .section {
     padding: 7rem 3rem;
   }
+
   .about-stats .progress-bars {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .about-container .right-about {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .timeline {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .main-title h2 {
     font-size: 3rem;
   }
@@ -794,4 +824,4 @@ section {
   .main-title h2 .bg-text {
     font-size: 4rem;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
