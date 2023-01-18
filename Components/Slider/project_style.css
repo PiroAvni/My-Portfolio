@@ -355,7 +355,7 @@ li {
 /* Small Devices */
 @media screen and (max-width: 520px) {
   .project-title {
-    font-size: 2.25rem;
+    font-size: 1.8rem;
   }
   .card0 figure img {
     width: 200px;
