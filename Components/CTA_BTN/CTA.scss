@@ -1,4 +1,16 @@
 /*Independed components*/
+.button{
+    border-radius: 30px;
+    color: inherit;
+    font-weight: 600;
+    position: relative;
+    border: 1px solid var(--color-secondary);
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    overflow: hidden;
+    background: transparent;
+}
 .btn-con{
   display: flex;
   align-self: flex-start;
@@ -14,6 +26,7 @@
   align-self: flex-start;
   align-items: center;
   overflow: hidden;
+  background: transparent;
   .btn-text{
       padding: 0 2rem;
   }
