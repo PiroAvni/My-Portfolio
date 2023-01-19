@@ -852,18 +852,25 @@
             </div>
             <!-- Conatct Form - with submit-->
             <div class="right-contact">
-              <form action="https://formsubmit.co/avnipiro.dev@gmail.com" method="POST" class="contact-form">
+              <form action="https://formsubmit.co/ec171c6262c694bdeca7691a516ca6e2" method="POST" class="contact-form"></form>
+                  <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none;">
+
+          <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="hidden" name="_next" value="https://piroavni.github.io/myportfolio/success.html" >
                 <div class="input-control i-c-2">
-                  <input type="text" name="name" required placeholder="YOUR NAME" />
-                  <input type="email" name="email" required placeholder="YOUR EMAIL" />
+                  <input type="text" name="name" required placeholder="YOUR NAME" id="Name"  />
+                  <input type="email" name="email" required placeholder="YOUR EMAIL" id="emailInfo"/>
                 </div>
                 <div class="input-control">
-                  <input type="text" name="_subject" required placeholder="ENTER SUBJECT" />
+                  <input type="text" name="_subject" required placeholder="ENTER SUBJECT" id="subject"/>
                 </div>
                 <div class="input-control">
                   <textarea
-                    name=""
-                    id=""
+                  id="comments" 
+                  name="comments"
                     cols="15"
                     rows="8"
                     placeholder="Message Here..."
@@ -871,7 +878,7 @@
                 </div>
               <div class="btn-contacts">
                 <div class="submit-btn">
-                  <a href="" class="main-btn">
+                  <a href="#home" class="main-btn">
                     <span class="btn-text">Submit</span>
                     <span class="btn-icon"
                       ><i class="fas fa-download"></i
