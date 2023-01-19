@@ -57,22 +57,22 @@ PageTransitions();
  * ! Typewritter effect
  */
 // set up text to print, each item in array is new line
-var aText = new Array(
+let aText = new Array(
   "I have always had a passion for software development the idea of contributing to a fast-moving industry where it will allow me to create, write code and potentially help improve the experience or solve a problem be it aimed at company or personal level. "
 );
-var iSpeed = 50; // time delay of print out
-var iIndex = 0; // start printing array at this posision
-var iArrLength = aText[0].length; // the length of the text array
-var iScrollAt = 5; // start scrolling up at this many lines
+let iSpeed = 50; // time delay of print out
+let iIndex = 0; // start printing array at this posision
+let iArrLength = aText[0].length; // the length of the text array
+let iScrollAt = 5; // start scrolling up at this many lines
 
-var iTextPos = 0; // initialise text position
-var sContents = ""; // initialise contents variable
-var iRow; // initialise current row
+let iTextPos = 0; // initialise text position
+let sContents = ""; // initialise contents letiable
+let iRow; // initialise current row
 
 function typewriter() {
   sContents = " ";
   iRow = Math.max(0, iIndex - iScrollAt);
-  var destination = document.getElementById("summary");
+  let destination = document.getElementById("summary");
 
   while (iRow < iIndex) {
     sContents += aText[iRow++] + "<br />";
