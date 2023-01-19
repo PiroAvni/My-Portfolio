@@ -853,7 +853,13 @@
             <!-- Conatct Form - with submit-->
             <div class="right-contact">
               <form action="https://formsubmit.co/avnipiro.dev@gmail.com" method="POST" class="contact-form">
-             
+                  <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none;">
+
+          <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="hidden"  name="_url"  value="https://www.avnipiro.dev/success.html" >
                 <div class="input-control i-c-2">
                   <input type="text" name="name" required placeholder="YOUR NAME" id="Name"  />
                   <input type="email" name="email" required placeholder="YOUR EMAIL" id="emailInfo"/>
